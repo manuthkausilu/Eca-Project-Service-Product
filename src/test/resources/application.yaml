@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Product-Service
+  
+  cloud:
+    config:
+      enabled: false
+    discovery:
+      enabled: false
+    service-registry:
+      auto-registration:
+        enabled: false
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoAutoConfiguration
+
+eureka:
+  client:
+    enabled: false
+
